@@ -56,10 +56,18 @@ public class Lampe
     
     public void setWatt (int neuWatt)
     {
+       if (neuWatt >= 1 && neuWatt <= 500)
+        {   
         Watt = neuWatt;
+        }
+        else
+        {
+        System.out.println("Fehler: Watt muss zwischen 1 und 500 liegen!");
+        Watt = 1;
+        }
     }
     
-    public void printLampe()
+        public void printLampe()
     {
         System.out.println(Farbe + " , " + Watt + " , " + Dimmbar);
     }
