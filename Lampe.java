@@ -4,6 +4,30 @@ public class Lampe
     private int     Watt;
     private boolean Dimmbar;
 
+    public Lampe (String neuFarbe, int neuWatt, boolean neuDimmbar)
+    {
+        setFarbe(neuFarbe);
+        setWatt(neuWatt);
+        setDimmbar(neuDimmbar);
+        
+    }
+    
+    public Lampe (String neuFarbe, boolean neuDimmbar)
+    {
+        setFarbe(neuFarbe);
+        setWatt(14);
+        setDimmbar(neuDimmbar);
+        
+    }
+    
+    public Lampe (String neuFarbe, int neuWatt)
+    {
+        setFarbe(neuFarbe);
+        setWatt(neuWatt);
+        setDimmbar(true);
+        
+    }
+    
     public String getFarbe()
     {
         return Farbe;
@@ -34,10 +58,5 @@ public class Lampe
     {
         Watt = neuWatt;
     }
-    
-    
-    
-    
-    
     
 }
