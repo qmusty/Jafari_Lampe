@@ -20,8 +20,20 @@ public class Lampe
         return Dimmbar;
     }    
     
+    public void setFarbe (String neuFarbe)
+    {
+        Farbe = neuFarbe;
+    }
     
+    public void setDimmbar (boolean neuDimmbar)
+    {
+        Dimmbar = neuDimmbar;
+    }
     
+    public void setWatt (int neuWatt)
+    {
+        Watt = neuWatt;
+    }
     
     
     
