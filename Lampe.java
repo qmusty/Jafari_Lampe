@@ -9,7 +9,7 @@ public class Lampe
         setFarbe(neuFarbe);
         setWatt(neuWatt);
         setDimmbar(neuDimmbar);
-        
+        printLampe();
     }
     
     public Lampe (String neuFarbe, boolean neuDimmbar)
