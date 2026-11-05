@@ -59,4 +59,8 @@ public class Lampe
         Watt = neuWatt;
     }
     
+    public void printLampe()
+    {
+        System.out.println(Farbe + " , " + Watt + " , " + Dimmbar);
+    }
 }
