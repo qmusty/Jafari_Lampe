@@ -1,0 +1,29 @@
+body {
+background-color: whitesmoke;
+color: black;
+font-family: Arial;
+font-size: 19px;
+margin: 21px;
+}
+
+h1 {
+color: fuchsia;
+text-align: center;
+}
+
+h2 {
+color: plum;
+border-bottom: 2px solid black;
+}
+
+img {
+border-radius: 10px;
+}
+
+a {
+color: fuchsia;
+}
+
+a:hover {
+text-decoration: underline;
+}
