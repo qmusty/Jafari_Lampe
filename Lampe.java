@@ -27,13 +27,7 @@ public class Lampe
         setDimmbar(true);
         
     }
-    
-    public String getFarbe()
-    {
-        return Farbe;
-        
-    }
-    // this is a comment 
+
     public int getWatt()
     {
         return Watt;
@@ -83,6 +77,20 @@ public class Lampe
         else
         {
             return Farbe.substring(0, i);
+        }
+    }
+    
+     public String getFarbe()
+    {
+        int i = Farbe.indexOf(" ");
+
+        if (i == -1)
+        {
+            return "Fehler: Kein Leerzeichen";
+        }
+        else
+        {
+            return Farbe.substring(i + 1);
         }
     }
 }
