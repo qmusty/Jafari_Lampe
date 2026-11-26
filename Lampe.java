@@ -71,4 +71,18 @@ public class Lampe
     {
         System.out.println(Farbe + " , " + Watt + " , " + Dimmbar);
     }
+    
+    public String getFarbton()
+    {
+        int i = Farbe.indexOf(" ");
+
+        if (i == -1)
+        {
+            return "Fehler: Kein Leerzeichen";
+        }
+        else
+        {
+            return Farbe.substring(0, i);
+        }
+    }
 }
