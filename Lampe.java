@@ -52,12 +52,12 @@ public class Lampe
     {
        if (neuWatt >= 1 && neuWatt <= 500)
         {   
-        Watt = neuWatt;
+            Watt = neuWatt;
         }
-        else
+            else
         {
-        System.out.println("Fehler: Watt muss zwischen 1 und 500 liegen!");
-        Watt = 1;
+            System.out.println("Fehler: Watt muss zwischen 1 und 500 liegen!");
+            Watt = 1;
         }
     }
     
@@ -74,7 +74,7 @@ public class Lampe
         {
             return "Fehler: Kein Leerzeichen";
         }
-        else
+            else
         {
             return Farbe.substring(0, i);
         }
@@ -88,7 +88,7 @@ public class Lampe
         {
             return "Fehler: Kein Leerzeichen";
         }
-        else
+            else
         {
             return Farbe.substring(i + 1);
         }
